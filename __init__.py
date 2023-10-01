@@ -152,13 +152,13 @@ def decrypt(cipher, encrypted_message):
 
 
 def download_message_and_decrypt(link, password=None):
-    if password:
-        headers2 = {
-            "X-Decrypt-Password": password,
-        }
-        response2 = requests.get(link, headers=headers2)
-    else:
-        response2 = requests.get(link)
+    # if password:
+    #     headers2 = {
+    #         "X-Decrypt-Password": password,
+    #     }
+    #     response2 = requests.get(link, headers=headers2)
+    # else:
+    response2 = requests.get(link)
     return response2
 
 
